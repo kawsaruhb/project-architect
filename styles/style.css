@@ -171,32 +171,45 @@ nav li{
     gap: 100px;
 }
 
-.btn-experience{
+.features-img{
+    position: relative;
+    width: 50%;
+}
+
+.features-img img{
+    width: 100%;
+    height: auto;
+}
+
+.features-img .btn-experience{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-130%, -8%);
+    -ms-transform: translate(-50%, -50%);
     color: white;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 60px;
+    line-height: 40px;
     border: 0;
-    padding: 18px 35px;
+    padding: 45px 20px;
     height: 160px;
-    width: 280px;
-    border-radius: 5px;
+    width: 295px;
+    border-radius: 8px;
     background-color: #FD6E0A;
-    /* position: absolute;
-    z-index: -1;
-    right: 37%; */
-    
 }
 
-.btn3{
-    position: absolute;
-    z-index: -1;
-    right: 37%;
-    
+.small{
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 
-/* Responsive style of header and banner */
+
+/*----------------------- Responsive styles ------------------------*/
 
 @media only screen and (max-width:576px){
+
+    /* Header and banner responsive styles */
 
     nav{
         margin-left: 15px;
@@ -210,11 +223,14 @@ nav li{
         margin-left: 0;
     }
 
-    nav, nav ul, .quick-list-items{
+    nav, nav ul, .quick-list-items, .container{
         flex-direction: column;
         padding: 0;
         
     }
+
+    /* Quick list responsive styles */
+
     .quick-list-images{
         grid-template-columns: repeat(1, 1fr);
         margin-left: 0;
@@ -222,6 +238,50 @@ nav li{
     }
     .quick-list-info{
         margin-top: 0;
+    }
+
+    /* Features responsive styles */
+
+    .features{
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .feature{
+        width: 350px;
+        height: 141px;
+        box-shadow: 3px 3px 3px 3px #ece9e9;
+        border-radius: 5px;
+    }
+
+    .feature-title{
+        font-weight: 400;
+        font-size: 15px;
+        padding-top: 20px;
+        margin-left: 20px;
+        }
+    
+    .feature-des{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 1.6;
+        color: #727272;
+        margin-left: 20px;
+    }
+
+    .features-img{
+        margin-top: 0;
+    }
+
+    .features-img img{
+        width: 200%;
+    }
+
+    .features-img .btn-experience{
+        position:unset;
+        transform: translate(0);
+        -ms-transform: translate(0);
+        
     }
 }
 
