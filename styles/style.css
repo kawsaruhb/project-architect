@@ -1,0 +1,227 @@
+/* font style */
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+/* Common styles */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* header nav styles */
+
+.header{
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.header-title{
+    font-size: 35px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    color: #424242;
+    font-weight: 300px;
+    font-size: 15px;
+    margin-top: 43px;
+}
+
+nav li{
+    list-style: none;
+    
+}
+
+/* banner styles */
+
+.banner-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.banner-info{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 50px;
+
+}
+
+.btn-primary{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    
+}
+
+.btn1{
+    text-align: center;
+}
+
+.banner img{
+    width: 1240px;
+    height: 600px;
+    margin-left: 220px;
+    margin-top: 50px;
+    padding-bottom: 45px;
+}
+
+/* Quick List styles */
+
+.quick-list-items{
+    display: flex;
+    gap: 73px;
+}
+
+.quick-list-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+    margin-left: 250px;
+    margin-top: 85px;
+}
+
+.quick-list-info{
+    margin-top: 220px;
+}
+
+.quick-list-info-title{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.quick-list-info-des{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #727272;
+    margin-bottom: 24px;
+    
+}
+
+/* Features you will love styles */
+
+.features{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.features-img{
+    margin-right: 200px;
+    margin-top: 100px;
+}
+
+.features-head-title{
+    border-left: 6px solid #FF900E;
+    height: 106px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.features-head-title{
+    padding-left: 15px;
+}
+
+.features-head-des{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #727272;
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+.feature{
+    width: 520px;
+    height: 151px;
+    box-shadow: 3px 3px 3px 3px #ece9e9;
+    border-radius: 5px;
+}
+
+.feature-title{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+    }
+
+.feature-des{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #727272;
+    margin-left: 20px;
+}
+
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.btn-experience{
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    border: 0;
+    padding: 18px 35px;
+    height: 160px;
+    width: 280px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    /* position: absolute;
+    z-index: -1;
+    right: 37%; */
+    
+}
+
+.btn3{
+    position: absolute;
+    z-index: -1;
+    right: 37%;
+    
+}
+
+/* Responsive style of header and banner */
+
+@media only screen and (max-width:576px){
+
+    nav{
+        margin-left: 15px;
+    }
+    nav ul{
+        margin-left: 15px;
+    }
+
+    .banner img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    nav, nav ul, .quick-list-items{
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    .quick-list-images{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        width: 100%;
+    }
+    .quick-list-info{
+        margin-top: 0;
+    }
+}
+
