@@ -204,8 +204,57 @@ nav li{
     letter-spacing: 2px;
 }
 
+/* Some facts styles */
 
-/*----------------------- Responsive styles ------------------------*/
+.facts{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.facts-title{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.facts-des{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #727272;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.box{
+    box-sizing: border-box;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.number{
+    font-weight: 400;
+    font-size: 35px;
+    color: #424242;
+    margin: 0;
+}
+
+.box-title{
+    color: #727272;
+    margin: 0;
+}
+
+
+/*------------------------------------------ Responsive styles ------------------------------------------------*/
 
 @media only screen and (max-width:576px){
 
