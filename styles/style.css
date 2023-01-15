@@ -289,6 +289,56 @@ nav li{
     opacity: 0.5;
 }
 
+/* Our Team styles */
+
+.team-title{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team-members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 100px;
+}
+
+.member-info {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+  }
+  
+  .member-info:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* .container {
+    padding: 2px 16px;
+  } */
+
+  .member-info img{
+    border-radius: 5px;
+  }
+
+  .container-name{
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    color: #424242;
+    margin: 0;
+  }
+
+  .container-des{
+    text-align: center;
+  }
+
 /* Footer styles */
 
 .footer-items{
@@ -316,7 +366,7 @@ nav li{
 
     /* common styles */
 
-    nav, nav ul, .quick-list-items, .container, .box-container, .sponsors-logos{
+    nav, nav ul, .quick-list-items, .container, .box-container, .sponsors-logos, .team-members{
         flex-direction: column;
         padding: 0;
         
@@ -394,6 +444,15 @@ nav li{
         transform: translate(0);
         -ms-transform: translate(0);
         
+    }
+
+    /* Team members responsive styles */
+
+    .team-members{
+        gap: 50px;
+    }
+    .member-info{
+        width: 50%;
     }
 
     /* Some facts responsive style */
